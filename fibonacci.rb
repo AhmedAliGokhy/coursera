@@ -10,8 +10,8 @@ def table_fibonacci(n)
   f = []
   f[0] = 0
   f[1] = 1
-  (2..n).each_with_index do |_val, i|
+  for i in 2..n do
     f[i] = f[i - 1] + f[i - 2]
   end
-  f[-1]
+  f[n]
 end
