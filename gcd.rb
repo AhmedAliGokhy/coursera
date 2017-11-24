@@ -11,7 +11,7 @@ end
 # get GCD or GCF using euclidean algorithm
 def euclidean_gcd(up, down)
   return up if down.zero?
-  gcd(down, up % down)
+  euclidean_gcd(down, up % down)
 end
 
 def stree_testing
