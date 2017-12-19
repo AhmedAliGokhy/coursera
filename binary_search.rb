@@ -1,5 +1,5 @@
 def binary_search(array, min, max, target)
-  return 'not found' if max > min
+  return 'not found' if min > max
   mid = min + ((max - min) / 2)
   return mid if array[mid] == target
   if target < array[mid]
@@ -9,4 +9,4 @@ def binary_search(array, min, max, target)
   end
 end
 
-puts binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9], 0, 9, -1)
+puts binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9], 0, 10, 6)

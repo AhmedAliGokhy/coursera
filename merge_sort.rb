@@ -22,6 +22,6 @@ def merge_sort(array)
   merge(b, c)
 end
 
-array = Array.new(1000000) { rand(1...10000) }
+array = Array.new(100) { rand(1...10000) }
 
 puts merge_sort(array)
